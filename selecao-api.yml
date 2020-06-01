@@ -1,8 +1,8 @@
-user:
+selecao:
   server:
     port: 8082
 
-server.port: ${user.server.port}
+server.port: ${selecao.server.port}
 
 spring:
   jpa:
@@ -31,6 +31,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 #       defaultZone: http://ms-discovery:8761/eureka
 
-# elasticsearch.index: user
-# elasticsearch.base.address: http://localhost:9200/${elasticsearch.index}
+elasticsearch.index: selecao
+elasticsearch.base.address: http://localhost:9200/${elasticsearch.index}
 # elasticsearch.base.address: http://elasticsearch:9200/${elasticsearch.index}
