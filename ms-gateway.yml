@@ -1,0 +1,24 @@
+gateway:
+  server:
+    port: 8099
+
+server.port: ${gateway.server.port}
+
+zuul:
+  routes:
+    config:
+      path: /config/**
+      url: http://127.0.0.1:8888/
+      # url: http://ms-config:8888/
+    discovery:
+      path: /discovery/**
+      url: http://127.0.0.1:8761/
+      # url: http://ms-discovery:8761/
+    selecaoapi:
+      path: /selecao-api/**
+      url: http://127.0.0.1:8082/
+      # url: http://selecao-api:8082/
+    contempladosapi:
+      path: /contemplados-api/**
+      url: http://127.0.0.1:8084/
+      # url: http://contemplados-api:8084/
