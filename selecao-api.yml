@@ -25,12 +25,10 @@ spring:
 fila.entrada: queue-familia-waiting
 fila.finalizado: queue-familia-done
 
-selecao.api.address: http://localhost:8084
-
-# eureka:
-#   client:
-#     serviceUrl:
-#       defaultZone: http://localhost:8761/eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
 #       defaultZone: http://ms-discovery:8761/eureka
 
 # elasticsearch.index: user
