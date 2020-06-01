@@ -7,8 +7,8 @@ server.port: ${contemplados.server.port}
 spring:
   data:
     mongodb:
-      # host: mongo
-      host: localhost
+      host: mongo
+#      host: localhost
       port: 27017
       database: contemplados
       repositories:
@@ -16,8 +16,8 @@ spring:
   rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
-#    host: rabbitmq
-    host: localhost
+   host: rabbitmq
+#   host: localhost
   jpa:
     show-sql: true
   main:
@@ -29,5 +29,5 @@ fila.finalizado: queue-familia-done
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-#       defaultZone: http://ms-discovery:8761/eureka
+#      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://ms-discovery:8761/eureka
