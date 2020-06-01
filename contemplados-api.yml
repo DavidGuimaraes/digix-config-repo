@@ -1,0 +1,33 @@
+contemplados:
+  server:
+    port: 8084
+
+server.port: ${contemplados.server.port}
+
+spring:
+  data:
+    mongodb:
+      # host: mongo
+      host: localhost
+      port: 27017
+      database: contemplados
+      repositories:
+        enabled: true
+  rabbitmq:
+    username: rabbit666
+    password: melhorsenhadomundo
+#    host: rabbitmq
+    host: localhost
+  jpa:
+    show-sql: true
+  main:
+    allow-bean-definition-overriding: true
+
+fila.entrada: queue-familia-waiting
+fila.finalizado: queue-familia-done
+
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://localhost:8761/eureka
+#       defaultZone: http://ms-discovery:8761/eureka
