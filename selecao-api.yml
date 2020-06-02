@@ -9,7 +9,7 @@ spring:
     database: POSTGRESQL
     show-sql: true
   datasource:
-#    url: jdbc:postgresql://localhost:5433/selecao
+    # url: jdbc:postgresql://localhost:5433/selecao
     url: jdbc:postgresql://postgres:5432/selecao
     username: postgres
     password: 123456
@@ -20,7 +20,7 @@ spring:
     username: rabbit666
     password: melhorsenhadomundo
     host: rabbitmq
-#    host: localhost
+    # host: localhost
 
 fila.entrada: queue-familia-waiting
 fila.finalizado: queue-familia-done
@@ -28,7 +28,7 @@ fila.finalizado: queue-familia-done
 eureka:
   client:
     serviceUrl:
-#      defaultZone: http://localhost:8761/eureka
+      # defaultZone: http://localhost:8761/eureka
       defaultZone: http://ms-discovery:8761/eureka
 
 elasticsearch.index: selecao
