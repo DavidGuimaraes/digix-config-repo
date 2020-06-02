@@ -1,7 +1,11 @@
-server.port: 8084
+test:
+  server:
+    port: 8084
+
+server.port: ${test.server.port}
 
 spring:
-   data:
+  data:
     mongodb:
       host: mongo
 #      host: localhost
@@ -9,7 +13,7 @@ spring:
       database: contemplados
       repositories:
         enabled: true
-   rabbitmq:
+  rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
     host: rabbitmq
