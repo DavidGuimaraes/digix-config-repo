@@ -5,7 +5,7 @@ contemplados:
 server.port: ${contemplados.server.port}
 
 spring:
-  data:
+   data:
     mongodb:
       host: mongo
 #      host: localhost
@@ -16,7 +16,7 @@ spring:
   rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
-   host: rabbitmq
+    host: rabbitmq
 #   host: localhost
   jpa:
     show-sql: true
