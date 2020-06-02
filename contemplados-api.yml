@@ -1,8 +1,4 @@
-contemplados:
-  server:
-    port: 8084
-
-server.port: ${contemplados.server.port}
+server.port: 8084
 
 spring:
    data:
@@ -13,7 +9,7 @@ spring:
       database: contemplados
       repositories:
         enabled: true
-  rabbitmq:
+   rabbitmq:
     username: rabbit666
     password: melhorsenhadomundo
     host: rabbitmq
